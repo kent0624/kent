@@ -11,7 +11,7 @@ plt.rcParams['axes.unicode_minus'] = False
 
 @st.cache_data
 def load_data():
-    file_path = "四家七年.csv" 
+    file_path = "kent/四家七年.csv" 
     if not os.path.exists(file_path): return None
     try:
         df = pd.read_csv(file_path, encoding='cp950', skiprows=1)
